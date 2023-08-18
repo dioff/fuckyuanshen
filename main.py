@@ -1,14 +1,9 @@
 import cv2 
 import pyautogui
-import os
-import time
 import subprocess
 import numpy as np
 from PIL import ImageGrab
-import pygame
 
-# 初始化pygame
-pygame.init()
 
 while True:
     # 获取屏幕分辨率
@@ -26,27 +21,10 @@ while True:
     # 判断是否满足播放视频条件
     if white_percentage > 50:
         try:
-            video_path = "/home/liu/桌面/GenshinImpact_Start/bandicam 2023-08-18 23-37-06-405.mp4"  # 修改为实际视频文件路径
+            video_path = ""  # 修改为实际视频文件路径
             subprocess.Popen(['ffplay', '-fs', '-autoexit', video_path])
             print("原神，启动！！！!")
             break
         except Exception as e:
             print(f"Error: {e}")
             break
-    # 判断是否满足播放音频条件
-    # if white_percentage > 50:
-    #     try:
-    #         audio_path = "/home/liu/桌面/GenshinImpact_Start/mp3/BGM.mp3"  # 修改为实际音频文件路径
-
-    #         # 播放音频文件
-    #         pygame.mixer.music.load(audio_path)
-    #         pygame.mixer.music.play()
-
-    #         print("播放音频!")
-            
-    #         # 等待音频播放完成
-    #         while pygame.mixer.music.get_busy():
-    #             pass
-            
-    #     except Exception as e:
-    #         print(f"Error: {e}")
