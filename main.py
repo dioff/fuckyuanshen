@@ -21,7 +21,7 @@ while True:
     # 判断是否满足播放视频条件
     if white_percentage > 50:
         try:
-            video_path = ""  # 修改为实际视频文件路径
+            video_path = "mp4/bandicam 2023-08-18 23-37-06-405.mp4"  # 修改为实际视频文件路径
             subprocess.Popen(['ffplay', '-fs', '-autoexit', video_path])
             print("原神，启动！！！!")
             break
