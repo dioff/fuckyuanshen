@@ -23,4 +23,4 @@ python main.py
 
 ## 特别感谢
 
-- [Dao1023](https://kgithub.com/Dao1023/GenshinImpact_Start.git)
+- [Dao1023](https://github.com/Dao1023/GenshinImpact_Start.git)
